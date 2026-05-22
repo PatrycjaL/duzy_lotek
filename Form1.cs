@@ -2,16 +2,25 @@ namespace duzy_lotek;
 
 public partial class Form1 : Form
 {
+    private List<int> glowneLiczby;
     public Form1()
     {
         InitializeComponent();
         Text = "Duży Lotek";
+        glowneLiczby = LosujLiczby();
+        lblGlowneLiczbyWyswietl.Text = string.Join(", ", glowneLiczby);
     }
 
     private void btnLosuj_Click(object sender, EventArgs e)
     {
         List<int> wylosowaneLiczby = LosujLiczby();
-        lblWynik.Text = string.Join(", ", wylosowaneLiczby);
+        lblWynikMaszyna1.Text = string.Join(", ", wylosowaneLiczby);
+    }
+
+    private void button1_Click(object sender, EventArgs e)
+    {
+        List<int> wylosowaneLiczby = LosujLiczby();
+        lblWynikMaszyna2.Text = string.Join(", ", wylosowaneLiczby);
     }
 
     private List<int> LosujLiczby()
@@ -29,4 +38,6 @@ public partial class Form1 : Form
 
         return liczby;
     }
+
+    
 }

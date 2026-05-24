@@ -36,11 +36,17 @@ partial class Form1
         lblMaszyna2 = new Label();
         lblWynikMaszyna2 = new Label();
         button1 = new Button();
+        lblWylosowane3 = new Label();
+        lblIlosc3 = new Label();
+        lblIlosc4 = new Label();
+        lblWylosowane4 = new Label();
+        lblIlosc5 = new Label();
+        lblWylosowane5 = new Label();
         SuspendLayout();
         // 
         // btnLosuj
         // 
-        btnLosuj.Location = new Point(937, 568);
+        btnLosuj.Location = new Point(1278, 568);
         btnLosuj.Name = "btnLosuj";
         btnLosuj.Size = new Size(277, 100);
         btnLosuj.TabIndex = 0;
@@ -110,7 +116,7 @@ partial class Form1
         // 
         // button1
         // 
-        button1.Location = new Point(937, 799);
+        button1.Location = new Point(1278, 799);
         button1.Name = "button1";
         button1.Size = new Size(277, 100);
         button1.TabIndex = 5;
@@ -118,11 +124,77 @@ partial class Form1
         button1.UseVisualStyleBackColor = true;
         button1.Click += button1_Click;
         // 
+        // lblWylosowane3
+        // 
+        lblWylosowane3.AutoSize = true;
+        lblWylosowane3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 238);
+        lblWylosowane3.Location = new Point(69, 1017);
+        lblWylosowane3.Name = "lblWylosowane3";
+        lblWylosowane3.Size = new Size(330, 45);
+        lblWylosowane3.TabIndex = 8;
+        lblWylosowane3.Text = "Ilość wylosowanych 3:";
+        // 
+        // lblIlosc3
+        // 
+        lblIlosc3.AutoSize = true;
+        lblIlosc3.Font = new Font("Segoe UI", 28.125F, FontStyle.Regular, GraphicsUnit.Point, 238);
+        lblIlosc3.Location = new Point(424, 981);
+        lblIlosc3.Name = "lblIlosc3";
+        lblIlosc3.Size = new Size(82, 100);
+        lblIlosc3.TabIndex = 9;
+        lblIlosc3.Text = "0";
+        // 
+        // lblIlosc4
+        // 
+        lblIlosc4.AutoSize = true;
+        lblIlosc4.Font = new Font("Segoe UI", 28.125F, FontStyle.Regular, GraphicsUnit.Point, 238);
+        lblIlosc4.Location = new Point(424, 1103);
+        lblIlosc4.Name = "lblIlosc4";
+        lblIlosc4.Size = new Size(82, 100);
+        lblIlosc4.TabIndex = 11;
+        lblIlosc4.Text = "0";
+        // 
+        // lblWylosowane4
+        // 
+        lblWylosowane4.AutoSize = true;
+        lblWylosowane4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 238);
+        lblWylosowane4.Location = new Point(69, 1139);
+        lblWylosowane4.Name = "lblWylosowane4";
+        lblWylosowane4.Size = new Size(330, 45);
+        lblWylosowane4.TabIndex = 10;
+        lblWylosowane4.Text = "Ilość wylosowanych 4:";
+        // 
+        // lblIlosc5
+        // 
+        lblIlosc5.AutoSize = true;
+        lblIlosc5.Font = new Font("Segoe UI", 28.125F, FontStyle.Regular, GraphicsUnit.Point, 238);
+        lblIlosc5.Location = new Point(424, 1222);
+        lblIlosc5.Name = "lblIlosc5";
+        lblIlosc5.Size = new Size(82, 100);
+        lblIlosc5.TabIndex = 13;
+        lblIlosc5.Text = "0";
+        // 
+        // lblWylosowane5
+        // 
+        lblWylosowane5.AutoSize = true;
+        lblWylosowane5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 238);
+        lblWylosowane5.Location = new Point(69, 1258);
+        lblWylosowane5.Name = "lblWylosowane5";
+        lblWylosowane5.Size = new Size(330, 45);
+        lblWylosowane5.TabIndex = 12;
+        lblWylosowane5.Text = "Ilość wylosowanych 5:";
+        // 
         // Form1
         // 
         AutoScaleDimensions = new SizeF(13F, 32F);
         AutoScaleMode = AutoScaleMode.Font;
         ClientSize = new Size(1680, 1520);
+        Controls.Add(lblIlosc5);
+        Controls.Add(lblWylosowane5);
+        Controls.Add(lblIlosc4);
+        Controls.Add(lblWylosowane4);
+        Controls.Add(lblIlosc3);
+        Controls.Add(lblWylosowane3);
         Controls.Add(lblMaszyna2);
         Controls.Add(lblWynikMaszyna2);
         Controls.Add(button1);
@@ -147,4 +219,10 @@ partial class Form1
     private Label lblMaszyna2;
     private Label lblWynikMaszyna2;
     private Button button1;
+    private Label lblWylosowane3;
+    private Label lblIlosc3;
+    private Label lblIlosc4;
+    private Label lblWylosowane4;
+    private Label lblIlosc5;
+    private Label lblWylosowane5;
 }
